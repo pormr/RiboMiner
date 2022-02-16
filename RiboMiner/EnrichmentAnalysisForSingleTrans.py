@@ -72,7 +72,7 @@ def plot_ratio_for_all_trans(ratio_dict,transList,inOutPrefix,ymin,ymax,unit,axv
 			ax.set_xlabel("Distance from start codon" + "("+unit+")",fontdict=text_font)
 			ax.set_ylabel("Mean enrichment (A.U)",fontdict=text_font)
 			if axhline:
-				ax.axhline(1,color="r",dashes=[2,3],clip_on=False,linewidth=2)
+				ax.axhline(axhline,color="r",dashes=[2,3],clip_on=False,linewidth=2)
 			else:
 				pass
 			ax.spines["top"].set_visible(False)
